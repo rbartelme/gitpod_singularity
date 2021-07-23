@@ -12,5 +12,5 @@ RUN export VERSION=3.7.4 && \
     
 RUN cd singularity \
     ./mconfig && \
-    make -C builddir && \
-    sudo make -C builddir install
+    make -C ./builddir && \
+    sudo make -C ./builddir install
